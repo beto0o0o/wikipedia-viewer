@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width = device-width, initial-scale = 1">
+	<link rel="stylesheet" type="text/css" href="pages/main.css">
+	<script type="text/javascript" src="pages/app.js"></script>	
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<!-- Optional theme -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">	
+	<link href="https://fonts.googleapis.com/css?family=Francois+One|Play" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="pages/font-awesome.min.css">
+	<title>Wikipedia viewer</title>
+</head>
+<body>
+<div class="container-fluid text-center">
+	<div class="header text-left">
+		<h1>Wikipedia Viewer</h1>
+	</div>
+	<div class="random ">
+		<a class = " btn green-btn" href="https://en.wikipedia.org/wiki/Special:Random">Click for a random result</a>
+	</div>
+	<div class="spacer"></div>
+	<div class="search-wrapper text-center">
+		<img src="images/search.svg" width="60px" class="img-responsive icon" onclick="show()">	
+		<p class="instruction text-center"> Click icon to search </p>
+		<input id="field" class="hidden" type="text" name="search" required onkeyup="lookFor()" placeholder="Start typing to search">
+		<i class="fa fa-times fa-2x hidden" aria-hidden="true" onclick="hide()"></i>
+	</div>
+	<div class="spacer"></div>
+	<div class="results-wrapper text-center">
+		<div class="results">
+			<ul class="list-unstyled">
+			</ul>
+		</div>
+	</div>
+</div>
+
+
+<script src="https://code.jquery.com/jquery-3.1.1.min.js"   integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="   crossorigin="anonymous"></script>
+</body>
+</html>
